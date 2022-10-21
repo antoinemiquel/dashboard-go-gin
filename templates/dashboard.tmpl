@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Weather dashboard</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+    <script src="/static/dashboard.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="/static/dashboard.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/novus/nvd3/v1.8.1/build/nv.d3.css">
+    <link rel="icon" type="image/png" href="/static/favicon.png" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+  </head>
+
+  <body>
+
+    <header>
+      <div class="header-background"></div>
+      <div class="title">
+        <h1>
+          {{ .title }}
+        </h1>
+        <h2 id="city"></h3>
+      </div>
+    </header>
+
+    <nav>
+      <div id="mapContainer">
+          <div id="map">
+          </div>
+      </div>
+    </nav>
+
+    <section>
+      <div class="chartContainer">
+
+        <div id="temperature" class="chart">
+          <text class="chartTitle">Température</text>
+          <svg></svg>
+        </div>
+
+        <div id="pressure" class="chart">
+          <text class="chartTitle">Pression atmosphérique</text>
+          <svg></svg>
+        </div>
+
+        <div id="humidity" class="chart">
+          <text class="chartTitle">Taux d'humidité</text>
+          <svg></svg>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Source on github <br />
+      <a href="#">Me contacter !</a></p>
+    </footer>
+
+  </body>
+</html>

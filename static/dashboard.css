@@ -1,0 +1,119 @@
+html {
+  height: 100%;
+}
+
+html, body, span, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  position: relative;
+  font-family: "proxima nova", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.4;
+  background-color: #f8f8f8;
+  min-width: 300px;
+  min-height: 100%;
+  color: #666;
+  overflow: auto;
+  /*display: inline-block;
+  width: 100%;*/
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a {
+  color: inherit;
+  text-decoration: None;
+}
+
+header {
+  position: relative;
+  margin-bottom: 10px;
+  min-width: 300px;
+}
+
+.header-background {
+  background-color: rgb(27, 26, 26);
+  opacity: 0.9;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 0 0 2px 1px rgba(175, 175, 175, 0.3);
+}
+
+.title {
+  position: relative;
+  width: 400px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 15px 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 26px;
+}
+
+.chartContainer {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart {
+  height : 310px;
+  width : 550px;
+  min-width: 300px;
+  margin: 5px auto 0 auto;
+  padding : 5px;
+  border : 1px #CCC solid;
+  background-color: "#fhcrc";
+}
+
+.chartTitle {
+  margin: 2px auto;
+  text-align: center;
+  width: 100%;
+  color:#333;
+  font-size:18px;
+}
+
+.mapContainer {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  height:50vh;
+  width : 100vw;
+  border : 1px #CCC solid;
+  background-color: "#fhcrc";
+  justify-content: center;
+}
+
+footer {
+  background-color: rgb(27, 26, 26);
+  text-align: center;
+}
